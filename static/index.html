@@ -8,24 +8,179 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/index.css?v=1" />
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css?v=2" />
   <link rel="stylesheet" href="/assets/css/nav.css?v=3" />
-  <title>Google</title>
+  <title>The Sunken Fate v3</title>
   <meta name="google" content="notranslate" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Rednotsus" />
   <meta charset="utf-8">
   <meta http-equiv="Cache-control" content="public">
-  <meta name="description" content="55GMS - Reds Exploit Corner - Join the discord for links!" />
+  <meta name="description" content="The Sunken Fate v3 - A portal to the depths" />
   <script src="/assets/js/script.js?v=14"></script>
-
   <script src="/assets/js/easteregg.min.js" async></script>
   <script src="/assets/sj/index.js" defer></script>
   <script src="/assets/sj/hiring.js?v=1" defer></script>
+  
+  <style>
+    :root {
+      --deep-black: #050508;
+      --midnight-black: #0a0a0f;
+      --ink-black: #121220;
+      --void-purple: #1a0b2e;
+      --abyss-blue: #0b122e;
+      --neon-purple: #8b5cf6;
+      --electric-blue: #3b82f6;
+      --cyber-blue: #06b6d4;
+      --ghost-white: #e0e0ff;
+      --faded-purple: rgba(139, 92, 246, 0.2);
+      --faded-blue: rgba(59, 130, 246, 0.2);
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--deep-black) 0%, var(--void-purple) 40%, var(--abyss-blue) 100%);
+      background-attachment: fixed;
+      color: var(--ghost-white);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    nav {
+      background: rgba(10, 10, 15, 0.8);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid var(--neon-purple);
+      padding: 1rem 0;
+    }
+
+    .navbar a {
+      color: var(--ghost-white);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.25rem;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background: var(--faded-purple);
+      box-shadow: 0 0 15px var(--neon-purple);
+    }
+
+    #nav-title {
+      font-weight: bold;
+      color: var(--neon-purple) !important;
+      text-shadow: 0 0 10px var(--neon-purple);
+    }
+
+    h1#titles {
+      font-size: 4rem;
+      margin: 2rem 0 0.5rem;
+      background: linear-gradient(90deg, var(--neon-purple), var(--electric-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
+      letter-spacing: 2px;
+    }
+
+    h1#sub {
+      color: var(--cyber-blue);
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    .searchbar input {
+      background: var(--ink-black);
+      border: 2px solid var(--neon-purple);
+      border-radius: 25px;
+      padding: 1rem 2rem;
+      width: 100%;
+      max-width: 600px;
+      color: var(--ghost-white);
+      font-size: 1.1rem;
+      outline: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+    }
+
+    .searchbar input:focus {
+      border-color: var(--electric-blue);
+      box-shadow: 0 0 25px rgba(59, 130, 246, 0.5);
+    }
+
+    .searchbar input::placeholder {
+      color: rgba(224, 224, 255, 0.6);
+    }
+
+    .quicklinks {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .quicklink {
+      background: var(--ink-black);
+      border: 2px solid var(--neon-purple);
+      border-radius: 15px;
+      padding: 1rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .quicklink:hover {
+      transform: translateY(-5px);
+      border-color: var(--electric-blue);
+      box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+    }
+
+    .shortcut {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .info {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .infobtn {
+      background: var(--ink-black);
+      border: 2px solid var(--neon-purple);
+      color: var(--ghost-white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .infobtn:hover {
+      background: var(--faded-blue);
+      border-color: var(--electric-blue);
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    }
+
+    .infobtn i {
+      font-size: 1.5rem;
+    }
+
+    form.searchbar {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+  </style>
 </head>
 
 <body>
   <nav>
     <div class="navbar">
-      <a id="nav-title" class='title' href="/">Reds Exploit Corner</a>
+      <a id="nav-title" class='title' href="/">The Sunken Fate v3</a>
       <a href="/g"><i class="fa-solid fa-gamepad">&nbsp;</i>Games</a>
       <a href="/a"><i class="fa-solid fa-box-archive">&nbsp;</i>Apps</a>
       <a href="/-"><i class="fa-solid fa-tv">&nbsp;</i>Media</a>
@@ -34,15 +189,15 @@
       <a href="/profile"><i class="fa-solid fa-user"></i></a>
     </div>
   </nav>
-  <h1 id="titles">Reds Exploit Corner</h1>
+  <h1 id="titles">The Sunken Fate v3</h1>
   <h1 id="sub">
-    &nbsp;
+    Dive into the digital abyss
   </h1>
 
   <div style="text-align: center">
     <br />
     <form class="searchbar">
-      <input tag="searchbar" placeholder="Search Google or Enter a Link" class="form__input" autocomplete="off">
+      <input tag="searchbar" placeholder="Search the depths..." class="form__input" autocomplete="off">
     </form>
     <div class="quicklinks">
       <a class="quicklink" href="d"><img class='shortcut' src="/img/shortcuts/Dashboard.webp"></a>
@@ -64,11 +219,12 @@
   </div>
   <br>
   <div class="info">
-    <a class="infobtn" href='https://discord.gg/xdaJ6Wytsu'><i class="fa-brands fa-discord"></i></a>
-    <a class="infobtn" href="https://github.com/55gms"><i class="fa-brands fa-github"></i></a>
+    <a class="infobtn" href='https://discord.gg/xdaJ6Wytsu'><i class="fa-brands fa-discord"></i> Discord</a>
+    <a class="infobtn" href="https://github.com/55gms"><i class="fa-brands fa-github"></i> GitHub</a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/gh/docklib/partners@master/partner-7a44b4ab.js?v=1"></script>
 </body>
 
 </html>
+
